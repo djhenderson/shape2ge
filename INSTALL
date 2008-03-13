@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Deps
+-------------------------------------------------------------------------------
+
+shape2ge requires:
+
+    - Python (tested with 2.5)
+    - shapelibc (tested with 1.2.10)
+    - pyshapelibc (tested with 0.3)
+
+shapelibc can be found from http://freshmeat.net/projects/shapelib
+pyshapelibc can be found at http://ftp.intevation.de/users/bh/pyshapelib
+
+shape2ge has been tested on Slackware 12 using kernel 2.6.21.5
+
+-------------------------------------------------------------------------------
+Installation
+-------------------------------------------------------------------------------
+
+In short:
+
+ - type "make"
+ - put
+    ./standalone/shape2ge-frontend.py 
+    ./standalone/pyshape2ge-engine.py
+   somewhere in your path
+
+Long Story:
+
+I don't like the way python forces you to install every piece of code you need
+to share as a system-wide module. (import only looks in the current dir and in
+the system dir). You can make import look in different places by setting
+environment variables before running your app, but IMO this sucks.
+
+So "make" removes local module "import" lines from the sources and cats the
+required source files into a big hunk of python code.
+
+This creates the apps in the ./standalone folder (in the C world these would
+be equivalent to linked binaries).
+
+This does mean that local modules have to import *, but I think it is worth it
+
