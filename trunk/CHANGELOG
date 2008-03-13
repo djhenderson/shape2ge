@@ -1,0 +1,7 @@
+2008-03-13
+    Initial Release
+
+    Features:
+
+    -engine supports ARC,ARCZ,POLYGON,POLYGONZ,POINT,POINTZ
+    -frontend supports ARC,ARCZ,POLYGON,POLYGONZ
