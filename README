@@ -21,7 +21,7 @@ There are a few similar programs on the web. The nicest one is called
 "Shape2Earth" and has a very nice GUI with stacks of options. Other projects
 like shp2kml are also available
 
-The problem with the above is that they don't script of batch well. With
+The problem with the above is that they don't script or batch well. With
 shape2ge it is possible to generate one config file for a whole class of
 shapefiles and then to convert all the shapefiles in a script using the same
 config file.
