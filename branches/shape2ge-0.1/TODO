@@ -1,0 +1,21 @@
+Engine:
+
+* Complete support for the other shape types (MULTIPATCH etc.)
+* Add BalloonStyle and the use of templates
+* Group Objects of the same type together using the KML <Folder> tag
+* Add support for proper shape names instead of the "Shape Nr. X" used currently
+* Add error handling to the config file parser
+* Add support for convertion when no .DBF file is found
+* Support reading the config file from stdin
+* Many more.....
+
+Frontend:
+ 
+* Complete support for the other shape types (MULTIPATCH etc.)
+* Add BalloonStyle and the use of templates
+* Be able to choose which fields go into the <description> tag
+* Add error handling
+* Add support for generating a config file if no .DBF is present
+* Support writing the config file to stdout
+* Many more.....
+
